@@ -23,7 +23,7 @@ inputSearch.addEventListener("keydown", function (e) {
 
 async function getCurrentLocationData(lat, log) {
   try {
-    var url = `http://api.weatherapi.com/v1/forecast.json?key=d2e8a92ef6914bfdbe5112030252306&q=${
+    var url = `https://api.weatherapi.com/v1/forecast.json?key=d2e8a92ef6914bfdbe5112030252306&q=${
       (lat, log)
     }&days=3`;
     var response = await fetch(url);
@@ -36,7 +36,7 @@ async function getCurrentLocationData(lat, log) {
 
 async function getSearchLocationData(value) {
   try {
-    var url = `http://api.weatherapi.com/v1/forecast.json?key=d2e8a92ef6914bfdbe5112030252306&q=${value}&days=3`;
+    var url = `https://api.weatherapi.com/v1/forecast.json?key=d2e8a92ef6914bfdbe5112030252306&q=${value}&days=3`;
     var response = await fetch(url);
     var data = await response.json();
     creatData(data);
