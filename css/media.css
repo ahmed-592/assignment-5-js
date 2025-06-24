@@ -1,0 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media screen and (min-width: 992px) {
+  section#cards div#secondDay div.vip-bg-bodyy {
+    padding-bottom: 186px !important;
+  }
+  section#cards div#therdyDay div.bg-bodyy {
+    padding-bottom: 186px !important;
+  }
+  section#cards div#thisDay div.bg-bodyy {
+    border-bottom-left-radius: 10px;
+  }
+  section#cards div#thisDay div.bg-title {
+    border-top-right-radius: 0;
+  }
+  section#cards div#therdyDay div.bg-title {
+    border-top-right-radius: 10px;
+  }
+  section#cards div#therdyDay div.bg-bodyy {
+    border-bottom-left-radius: 0;
+  }
+  section#cards .container {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    padding-inline: 80px;
+  }
+}

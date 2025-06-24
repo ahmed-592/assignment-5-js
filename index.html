@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-darkk">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-center align-items-center m-0"
+          href="#"
+        >
+          <img src="image/logo.png" alt="weather-logo" />
+          <div class="ms-3 logo-caption d-flex flex-column">
+            <h1 class="m-0">Weather</h1>
+            <span>tagline goes here</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="bg">
+        <div class="container">
+          <div class="position-relative">
+            <input
+              type="text"
+              id="inputSearch"
+              class="form-control ms-1 rounded-5 py-3 bg-darkk"
+              aria-describedby="passwordHelpBlock"
+              placeholder="Find your location..."
+            />
+            <button class="btnSearch border-0 rounded-5 position-absolute">
+              Find
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="cards" class="bg-darkk">
+        <div class="container">
+          <div class="test d-flex flex-column flex-lg-row mx-auto">
+            <div class="text-light col-lg-4" id="thisDay"></div>
+
+            <div class="text-center next-card col-lg-4" id="secondDay"></div>
+
+            <div class="text-center next-card col-lg-4" id="therdyDay"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="vip-bg-bodyy py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row justify-content-between">
+          <div class="position-relative col-lg-8">
+            <input
+              type="text"
+              id="inputPassword5"
+              class="form-control ms-1 rounded-5 py-3 bg-darkk"
+              aria-describedby="passwordHelpBlock"
+              placeholder="Enter your email to subscribe..."
+            />
+            <button class="btnSubscribe border-0 rounded-5 position-absolute">
+              Subscribe
+            </button>
+          </div>
+          <div class="mt-4 col-lg-3 mt-lg-0">
+            <ul class="list-unstyled d-flex">
+              <li class="d-flex justify-content-center align-items-center ms-1">
+                <i class="fa-brands fa-facebook-f"><a href=""></a></i>
+              </li>
+              <li class="d-flex justify-content-center align-items-center ms-2">
+                <i class="fa-brands fa-twitter"><a href=""></a></i>
+              </li>
+              <li class="d-flex justify-content-center align-items-center ms-2">
+                <i class="fa-brands fa-google-plus-g"><a href=""></a></i>
+              </li>
+              <li class="d-flex justify-content-center align-items-center ms-2">
+                <i class="fa-brands fa-pinterest"><a href=""></a></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="text-light opacity-50 ms-lg-2 mt-lg-4">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
